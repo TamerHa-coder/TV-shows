@@ -4,12 +4,12 @@ import './Show.css';
 function Show({ show }) {
   return (
     <Link className='link-to-one-show' to={`/show/${show.id}`}>
-      {/*
-      
-        insert your code here 
-      
-      
-      */}
+      {<div className="tv-show">
+      <img className="show-img" src={`${show.image_thumbnail_path}`} alt={`${show.title}`}>
+      </img>
+        <h2 className="show-footer">{show.name}</h2>
+        </div>
+        }
     </Link>
   );
 }

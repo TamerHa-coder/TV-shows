@@ -1,18 +1,15 @@
-import React from 'react';
+import React ,{ useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './OneShow.css';
+import axios from 'axios';
 import likedImg from "../media/liked.png"
 import notLikedImg from "../media/notLiked.png"
 
 function OneShow() {
-  const { id } = useParams(); //this is the selected show id
 
-    /*
-      
-      insert your code here 
-      
-      
-    */
+  const { id } = useParams(); //this is the selected show id
+ 
+    
 
   return (
     <div className='one-show-container'>
